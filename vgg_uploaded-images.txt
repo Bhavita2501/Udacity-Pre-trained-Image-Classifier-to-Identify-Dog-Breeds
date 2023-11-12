@@ -1,0 +1,87 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_02.jpg  label:                        dog
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:                     Pen_01.jpg  label:                        pen
+ 4 key:                     cat_01.jpg  label:                        cat
+{'Dog_02.jpg': ['dog', 'beagle', 0], 'Dog_01.jpg': ['dog', 'beagle', 0], 'Pen_01.jpg': ['pen', 'hammer', 0], 'cat_01.jpg': ['cat', 'lynx', 0]}
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                         beagle
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                         beagle
+
+                    Pen_01.jpg: 
+Real:                        pen   Classifier:                         hammer
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier:                           lynx
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+********************************
+results_dic {'Dog_02.jpg': ['dog', 'beagle', 0, 1, 1], 'Dog_01.jpg': ['dog', 'beagle', 0, 1, 1], 'Pen_01.jpg': ['pen', 'hammer', 0, 0, 0], 'cat_01.jpg': ['cat', 'lynx', 0, 0, 0]}
+********************************
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Pen_01.jpg: 
+Real:                        pen   Classifier:                         hammer  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier:                           lynx  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+** Results for model vgg **
+
+Number of Images: 4
+Number of Dog Images: 2
+Number of Not-a-Dog Images: 2
+
+*** Image Classification Results ***
+Number of Images with a Match between Pet & Classifier Labels: 0
+Number of Correct Dog Matches: 2
+Number of Correct Not-a-Dog Matches: 2
+Number of Correct Dog Breed Matches: 0
+
+*** Percentages of Correctly Classified Images ***
+% Correctly Match: 0.00%
+% Correctly Classified Dog Images: 100.00%
+% Correctly Classified Dog Breeds: 0.00%
+% Correctly Classified Not-a-Dog Images: 100.00%
+
+*** Incorrectly Classified Dog Breeds: ***
+Pet Label: dog - Classifier Label: beagle
+Pet Label: dog - Classifier Label: beagle
+
+** Total Elapsed Runtime: 0:0:8
